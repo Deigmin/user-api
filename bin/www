@@ -4,7 +4,7 @@
  * Module dependencies.
  */
 
-let app = require("../src/app");
+let app = require("../dist/app");
 let debug = require("debug")("user-api:server");
 let http = require("http");
 
