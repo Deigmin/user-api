@@ -4,14 +4,13 @@ import { DataTypes, Model } from "sequelize";
 export interface IUser {
     id?: number,
     username: string,
-    salt: string,
     password: string
+    salt?: string
+    isActive?: boolean,
     firstName?: string,
     lastName?: string,
-    isActive: boolean,
     lastLogin?: Date,
     isSuperuser?: boolean,
-
 }
 
 export class User extends Model<IUser> implements IUser {
